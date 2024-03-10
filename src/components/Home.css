@@ -1,0 +1,7 @@
+body{
+    --tw-bg-opacity: 1;
+    background: url('../assets/2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
