@@ -29,12 +29,14 @@ function Home() {
                 stage3: false,
                 stage4: false,
                 stage5: false,
+                stage6: false,
                 startTime: "",
                 stage1Time: "",
                 stage2Time: "",
                 stage3Time: "",
                 stage4Time: "",
                 stage5Time: "",
+                stage6Time: "",
             });
             if (team_name !== null && team_name.length !== 0)
                 navigate(`${team_name}/guidelines`);

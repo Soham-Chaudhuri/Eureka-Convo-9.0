@@ -38,7 +38,7 @@ function Guidelines() {
     }
   };
   return (
-    <div className="flex flex-col gap-2 my-4 h-[100dvh]">
+    <div className="flex flex-col gap-2 my-4 max-h-max">
       <h1 className="my-6 text-4xl text-center font-extrabold leading-none tracking-widest text-gray-400 md:text-5xl lg:text-[5rem] dark:text-white anton-regular ">
         GUIDELINES:
       </h1>
@@ -61,6 +61,9 @@ function Guidelines() {
             teams finishing 2nd and 3rd will be runner-up.
           </li>
           <li className="mb-4">
+          Time limit is till 4 pm. If no team is able to complete the final stage by then, then the team that cleared the highest level in minimum time will be declared winner.
+          </li>
+          <li className="mb-4">
             Contestants will be allowed to browse the internet or use any
             software or program however they want to solve the puzzles.
           </li>
@@ -68,6 +71,12 @@ function Guidelines() {
             Most of this round will be of hunting the clues online designed by
             the organizing team, so contestants are required to carry at least
             one laptop, charger and as well mobile phones per team.
+          </li>
+          <li className="mb-4">
+          Each team will be allowed to use 3 hints(maximum 1 hint per stage) without any penalty, which will be provided by the Hintmaster.
+          </li>
+          <li className="mb-4">
+          Hintmaster will be present in one of the classrooms in 2nd floor. Anyone who wants a hint will have to mention their team name and a secret code(email address of the participant asking for hint) to get it.
           </li>
         </ol>
       </div>

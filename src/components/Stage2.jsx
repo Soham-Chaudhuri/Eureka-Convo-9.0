@@ -39,6 +39,9 @@ function Stage2() {
   const [input21, setInput21] = useState(null);
   const [input22, setInput22] = useState(null);
   const [input23, setInput23] = useState(null);
+  const [input24, setInput24] = useState(null);
+  const [input25, setInput25] = useState(null);
+  const [input26, setInput26] = useState(null);
   const [team_data, setTeam_data] = useState(null);
   const params = useParams();
   const navigate = useNavigate();
@@ -62,31 +65,35 @@ function Stage2() {
       if (
         answer2_1.toLowerCase() === "g2h1" &&
         answer2_2.toLowerCase() === "aitana" &&
-        input1.toLowerCase() === "h" &&
-        input2.toLowerCase() === "b" &&
+        input1.toLowerCase() === "s" &&
+        input2.toLowerCase() === "i" &&
         input3.toLowerCase() === "a" &&
-        input4.toLowerCase() === "b" &&
-        input5.toLowerCase() === "h" &&
-        input6.toLowerCase() === "n" &&
-        input7.toLowerCase() === "i" &&
-        input8.toLowerCase() === "b" &&
-        input9.toLowerCase() === "i" &&
-        input10.toLowerCase() === "n" &&
-        input11.toLowerCase() === "h" &&
+        input4.toLowerCase() === "h" &&
+        input5.toLowerCase() === "b" &&
+        input6.toLowerCase() === "i" &&
+        input7.toLowerCase() === "n" &&
+        input8.toLowerCase() === "s" &&
+        input9.toLowerCase() === "s" &&
+        input10.toLowerCase() === "a" &&
+        input11.toLowerCase() === "n" &&
         input12.toLowerCase() === "h" &&
-        input13.toLowerCase() === "s" &&
-        input14.toLowerCase() === "b" &&
-        input15.toLowerCase() === "a" &&
-        input16.toLowerCase() === "b" &&
+        input13.toLowerCase() === "i" &&
+        input14.toLowerCase() === "a" &&
+        input15.toLowerCase() === "i" &&
+        input16.toLowerCase() === "n" &&
         input17.toLowerCase() === "s" &&
-        input18.toLowerCase() === "a" &&
-        input19.toLowerCase() === "i" &&
-        input20.toLowerCase() === "h" &&
-        input21.toLowerCase() === "s" &&
-        input22.toLowerCase() === "a" &&
-        input23.toLowerCase() === "b"
+        input18.toLowerCase() === "h" &&
+        input19.toLowerCase() === "b" &&
+        input20.toLowerCase() === "s" &&
+        input21.toLowerCase() === "a" &&
+        input22.toLowerCase() === "i" &&
+        input23.toLowerCase() === "b" &&
+        input24.toLowerCase() === "s" &&
+        input25.toLowerCase() === "a" &&
+        input26.toLowerCase() === "h" 
       ) {
         var dateNow = new Date();
+        // console.log("ok vai");
         update(ref(db, `${params.team_name.replace(/\./g, "_")}`), {
           stage3: true,
           stage2Time: dateNow,
@@ -148,7 +155,7 @@ function Stage2() {
             
           </h3> */}
           </div>
-          <div className="q2-container w-[80vw] h-[25vh] lg:h-auto lg:w-[75vw] mx-auto gap-4">
+          <div className="q2-container w-[80vw] h-[35vh] lg:h-auto lg:w-[75vw] mx-auto gap-4">
             <div className="item1">
               <img
                 src={ball}
@@ -196,9 +203,6 @@ function Stage2() {
               <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
                 N
               </div>
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                I
-              </div>
               <input
                 type="text"
                 value={input1}
@@ -207,238 +211,258 @@ function Stage2() {
                 }}
                 className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
                 maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                A
+              /><input
+              type="text"
+              value={input2}
+              onChange={(e) => {
+                setInput2(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+                B
               </div>
               <input
-                type="text"
-                value={input2}
-                onChange={(e) => {
-                  setInput2(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                S
-              </div>
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                S
-              </div>
-              <input
-                type="text"
-                value={input3}
-                onChange={(e) => {
-                  setInput3(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input4}
-                onChange={(e) => {
-                  setInput4(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input5}
-                onChange={(e) => {
-                  setInput5(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input6}
-                onChange={(e) => {
-                  setInput6(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input7}
-                onChange={(e) => {
-                  setInput7(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                A
-              </div>
-              <input
-                type="text"
-                value={input8}
-                onChange={(e) => {
-                  setInput8(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input9}
-                onChange={(e) => {
-                  setInput9(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input10}
-                onChange={(e) => {
-                  setInput10(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                S
-              </div>
-              <input
-                type="text"
-                value={input11}
-                onChange={(e) => {
-                  setInput11(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input12}
-                onChange={(e) => {
-                  setInput12(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                N
-              </div>
-              <input
-                type="text"
-                value={input13}
-                onChange={(e) => {
-                  setInput13(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input14}
-                onChange={(e) => {
-                  setInput14(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                I
-              </div>
-              <input
-                type="text"
-                value={input15}
-                onChange={(e) => {
-                  setInput15(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input16}
-                onChange={(e) => {
-                  setInput16(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input17}
-                onChange={(e) => {
-                  setInput17(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input18}
-                onChange={(e) => {
-                  setInput18(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                S
-              </div>
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              type="text"
+              value={input3}
+              onChange={(e) => {
+                setInput3(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input4}
+              onChange={(e) => {
+                setInput4(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input5}
+              onChange={(e) => {
+                setInput5(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
                 H
               </div>
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                N
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              A                
               </div>
               <input
-                type="text"
-                value={input19}
-                onChange={(e) => {
-                  setInput19(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <input
-                type="text"
-                value={input20}
-                onChange={(e) => {
-                  setInput20(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
-                N
+              type="text"
+              value={input6}
+              onChange={(e) => {
+                setInput6(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input7}
+              onChange={(e) => {
+                setInput7(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input8}
+              onChange={(e) => {
+                setInput8(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input9}
+              onChange={(e) => {
+                setInput9(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input10}
+              onChange={(e) => {
+                setInput10(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input11}
+              onChange={(e) => {
+                setInput11(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input12}
+              onChange={(e) => {
+                setInput12(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              B                
               </div>
               <input
-                type="text"
-                value={input21}
-                onChange={(e) => {
-                  setInput21(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
+              type="text"
+              value={input13}
+              onChange={(e) => {
+                setInput13(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
               <input
-                type="text"
-                value={input22}
-                onChange={(e) => {
-                  setInput22(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
+              type="text"
+              value={input14}
+              onChange={(e) => {
+                setInput14(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
               <input
-                type="text"
-                value={input23}
-                onChange={(e) => {
-                  setInput23(e.target.value);
-                }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
-                maxLength={1}
-              />
+              type="text"
+              value={input15}
+              onChange={(e) => {
+                setInput15(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              H                
+              </div>
+              <input
+              type="text"
+              value={input16}
+              onChange={(e) => {
+                setInput16(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+              <input
+              type="text"
+              value={input17}
+              onChange={(e) => {
+                setInput17(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              B                
+              </div>
+              <input
+              type="text"
+              value={input18}
+              onChange={(e) => {
+                setInput18(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              N                
+              </div>
+              <input
+              type="text"
+              value={input19}
+              onChange={(e) => {
+                setInput19(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input20}
+              onChange={(e) => {
+                setInput20(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              I                
+              </div>
+              <input
+              type="text"
+              value={input21}
+              onChange={(e) => {
+                setInput21(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input22}
+              onChange={(e) => {
+                setInput22(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input23}
+              onChange={(e) => {
+                setInput23(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input24}
+              onChange={(e) => {
+                setInput24(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input25}
+              onChange={(e) => {
+                setInput25(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <input
+              type="text"
+              value={input26}
+              onChange={(e) => {
+                setInput26(e.target.value);
+              }}
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              maxLength={1}
+            />
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              N                
+              </div>
             </div>
           </div>
           <div className="flex gap-4 justify-center items-center my-10">

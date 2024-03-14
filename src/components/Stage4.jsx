@@ -7,8 +7,9 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getDatabase, onValue, ref, set, update } from "firebase/database";
 const auth = getAuth(app);
 const db = getDatabase(app);
-import videofile from "../assets/Riddle-bx.webm";
-import codesheet from "../assets/10.webp";
+import videofile from "../assets/webmvid.webm";
+import videofile2 from "../assets/morse code.webm"
+import pic13 from "../assets/13.webp"
 function Stage4() {
   const [answer4_1, setAnswer4_1] = useState(null);
   const [answer4_2, setAnswer4_2] = useState(null);
@@ -16,8 +17,6 @@ function Stage4() {
   const [team_data, setTeam_data] = useState(null);
   const params = useParams();
   const navigate = useNavigate();
-  const hgh =
-    "the more we come out and do good to others, the more our hearts will be purified, and god will be in them.";
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({
@@ -36,9 +35,9 @@ function Stage4() {
   const checkAnswer = () => {
     if (!team_data.stage5) {
       if (
-        answer4_1.toLowerCase() === "password" &&
-        answer4_2.toLowerCase() === "error" &&
-        answer4_3.toLowerCase() === hgh
+        answer4_3.toLowerCase() === "parasite" &&
+        answer4_2.toLowerCase() === "sonny" &&
+        answer4_1.toLowerCase() === "hans zimmer"
       ) {
         var dateNow = new Date();
         update(ref(db, `${params.team_name.replace(/\./g, "_")}`), {
@@ -47,7 +46,6 @@ function Stage4() {
         });
         toast.success("Good Job!", { autoClose: 3200, theme: "dark" });
         navigate(`/${params.team_name}/stage5`);
-        // navigate(`/${params.team_name}/stage2`);
       } else {
         toast.error("Try Again!", { autoClose: 3200, theme: "dark" });
       }
@@ -57,7 +55,7 @@ function Stage4() {
   };
   return (
     <>
-      {team_data && team_data.stage3 && (
+      {team_data && team_data.stage4 && (
         <div className="flex flex-col gap-4 my-4 h-max">
           <h1 className="my-6 text-4xl text-center font-extrabold leading-none tracking-widest text-gray-400 md:text-5xl lg:text-[5rem] dark:text-white anton-regular ">
             STAGE 4:
@@ -67,29 +65,25 @@ function Stage4() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q1.
               </span>{" "}
-              Solve this.....
+              Connect the Links ....
             </h4>
           </div>
           <div className="flex justify-center items-center mx-auto w-[80vw] lg:w-[90vw]">
             <div class="bg-gray-900 shadow-lg rounded p-3">
               <div class="group relative">
-                <video class="w-[300px] h-[300px]" controls>
+                <video class="w-[600px]" controls>
                   <source src={videofile} type="video/mp4" />
                 </video>
               </div>
-              {/* <div class="p-5 text-center">
-              <h3 class="text-white text-lg">Play Me</h3>
-              
-            </div> */}
             </div>
           </div>
           <div className="flex items-center lg:w-full max-w-md mb-3 seva-fields formkit-fields mt-5 mx-auto">
             <div className="relative lg:w-full mr-3 formkit-field">
               <input
-                id="answer4.1"
+                id="answer2.1"
                 className="formkit-input poppins-regular bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                name="answer4.1"
-                aria-label="answer4.1"
+                name="answer2.1"
+                aria-label="answer2.1"
                 placeholder="Your Answer"
                 required
                 type="text"
@@ -104,41 +98,22 @@ function Stage4() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q2.
               </span>{" "}
-              Solve this Riddle.....
+              Who am I?
             </h4>
-            <div className="flex flex-col items-center mx-auto">
-              <h3 className="mt-4 lg:w-[25vw] text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
-                Riddle me this, O clever mind, In circuits, I'm what you'll
-                find. Neither resistor nor capacitor am I, Yet in engineering, I
-                always fly.
-              </h3>
-              <h3 className="mt-4 lg:w-[25vw] text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
-                In lectures, I'm silent, never a peep, But in labs, my secrets I
-                keep. I'm not a grade, nor a GPA, Yet without me, plans go
-                astray.
-              </h3>
-              <h3 className="mt-4 lg:w-[25vw] text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
-                In CAD drawings, I may be clear, Yet my absence is what
-                engineers fear. I'm not a tool, nor a machine, But in every
-                project, I'm the unseen.
-              </h3>
-              <h3 className="mt-4 lg:w-[25vw] text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
-                What am I, in the engineer's domain? <br />
-                <strong>
-                  {" "}
-                  Hint: I'm crucial, yet leave no physical stain{" "}
-                </strong>
-              </h3>
-            </div>
+            <h3 className="mt-4 lg:ml-16 text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
+            I have even had dreams…
+            </h3>
           </div>
-
+          <div className="mx-auto">
+            <img src={pic13} alt="" className="object-contain scale-75" />
+          </div>
           <div className="flex items-center lg:w-full max-w-md mb-3 seva-fields formkit-fields mt-5 mx-auto">
             <div className="relative lg:w-full mr-3 formkit-field">
               <input
-                id="answer4.2"
+                id="answer2.1"
                 className="formkit-input poppins-regular bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                name="answer4.2"
-                aria-label="answer4.2"
+                name="answer2.1"
+                aria-label="answer2.1"
                 placeholder="Your Answer"
                 required
                 type="text"
@@ -153,28 +128,25 @@ function Stage4() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q3.
               </span>{" "}
-              Decode the message...
+              Solve ...
             </h4>
-            <h3 className="mt-4 lg:ml-16 text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
-              Each letter in the phrase has been replaced with a random letter
-              or number. Try to decode the message.
-            </h3>
           </div>
-          <div className="mx-auto mt-3 lg:mt-10">
-            <img
-              src={codesheet}
-              alt=""
-              className="object-contain  scale-[80%] lg:scale-100"
-            />
+          <div className="flex justify-center items-center mx-auto w-[80vw]  lg:w-[90vw]">
+            <div class="bg-gray-900 shadow-lg rounded p-3">
+              <div class="group relative">
+                <video class="w-[600px]" controls>
+                  <source src={videofile2} type="video/mp4" />
+                </video>
+              </div>
+            </div>
           </div>
-
           <div className="flex items-center lg:w-full max-w-md mb-3 seva-fields formkit-fields mt-5 mx-auto">
             <div className="relative lg:w-full mr-3 formkit-field">
               <input
-                id="answer4.3"
+                id="answer2.1"
                 className="formkit-input poppins-regular bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                name="answer4.3"
-                aria-label="answer4.3"
+                name="answer2.1"
+                aria-label="answer2.1"
                 placeholder="Your Answer"
                 required
                 type="text"
