@@ -5,29 +5,44 @@ import { useNavigate } from "react-router-dom";
 import NeonGlory from "./NeonGlory";
 import { app } from "./firebase";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { getDatabase, ref, set } from "firebase/database";
+import { get, getDatabase, ref, set } from "firebase/database";
 const auth = getAuth(app);
 const db = getDatabase(app);
 function Home() {
   const navigate = useNavigate();
   const [team_name, setTeam_name] = useState(null);
-  const home = () =>{
-    set(ref(db,`${team_name.replace(/\./g, "_")}`),{
-      stage1: true,
-      stage2: false,
-      stage3: false,
-      stage4: false,
-      stage5: false,
-      startTime:"",
-      stage1Time:"",
-      stage2Time:"",
-      stage3Time:"",
-      stage4Time:"",
-      stage5Time:"",
-    });
-    if (team_name !== null && team_name.length !== 0)
+  const home = async () => {
+    const docRef = ref(db, `${team_name.replace(/\./g, "_")}`);
+    
+    try {
+        const docSnapshot = await get(docRef);
+        
+        if (docSnapshot.exists()) {
+            // Document already exists
+            navigate(`${team_name}/guidelines`);
+            console.log("Document already exists");
+        } else {
+            // Document doesn't exist, create it
+            set(ref(db, `${team_name.replace(/\./g, "_")}`), {
+                stage1: true,
+                stage2: false,
+                stage3: false,
+                stage4: false,
+                stage5: false,
+                startTime: "",
+                stage1Time: "",
+                stage2Time: "",
+                stage3Time: "",
+                stage4Time: "",
+                stage5Time: "",
+            });
+            if (team_name !== null && team_name.length !== 0)
                 navigate(`${team_name}/guidelines`);
-  }
+        }
+    } catch (error) {
+        console.error("Error checking document:", error);
+    }
+}
   return (
     <>
       <div className="flex flex-col justify-center items-center h-screen">

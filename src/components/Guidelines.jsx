@@ -27,7 +27,7 @@ function Guidelines() {
     });
   }, []);
   const checkAnswer = () => {
-    if (!team_data.stage1) {
+    if (team_data.stage1) {
       var dateNow = new Date();
       update(ref(db, `${params.team_name.replace(/\./g, "_")}`), {
         startTime: dateNow,
