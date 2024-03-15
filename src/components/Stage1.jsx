@@ -271,7 +271,7 @@ function Stage1() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q2.
               </span>{" "}
-              Solve This Rebus Puzzle -
+              Solve This Puzzle -
             </h4>
           </div>
           <div className="mx-auto w-[80vw] lg:[90vw] lg:h-72 flex items-center">

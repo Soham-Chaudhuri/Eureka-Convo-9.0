@@ -119,7 +119,7 @@ function Stage2() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q1.
               </span>{" "}
-              What is the last move _ _ _ _
+              What is the last move....
             </h4>
             <h3 className="mt-4 lg:ml-16 text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
               [eg : a1b1 : a1 to b1]
@@ -149,11 +149,12 @@ function Stage2() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q2.
               </span>{" "}
-              Nombre de 6 palabras quién soy?
+              Quién soy?
+               
             </h4>
-            {/* <h3 className="mt-4 lg:ml-16 text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
-            
-          </h3> */}
+            <h3 className="mt-4 lg:ml-16 text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-justify">
+            Nombre de 6 palabras...
+          </h3>
           </div>
           <div className="q2-container w-[80vw] h-[35vh] lg:h-auto lg:w-[75vw] mx-auto gap-4">
             <div className="item1">
@@ -200,7 +201,7 @@ function Stage2() {
           </div>
           <div class="relative rounded-xl  lg:p-14 p-8 h-max">
             <div class="grid grid-cols-6 gap-2 lg:gap-6 poppins-regular text-white lg:text-2xl text-sm text-center font-bold leading-6 bg-stripes-fuchsia rounded-lg">
-              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+              <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-rose-500">
                 N
               </div>
               <input
@@ -209,7 +210,7 @@ function Stage2() {
                 onChange={(e) => {
                   setInput1(e.target.value);
                 }}
-                className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+                className="p-2 lg:p-4 rounded-lg shadow-lg bg-rose-500 text-center"
                 maxLength={1}
               /><input
               type="text"
@@ -217,10 +218,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput2(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-rose-500 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-rose-500">
                 B
               </div>
               <input
@@ -229,7 +230,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput3(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-rose-500 text-center"
               maxLength={1}
             />
             <input
@@ -238,7 +239,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput4(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-purple-700 text-center"
               maxLength={1}
             />
             <input
@@ -247,13 +248,13 @@ function Stage2() {
               onChange={(e) => {
                 setInput5(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-yellow-400 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-rose-500">
                 H
               </div>
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-indigo-500">
               A                
               </div>
               <input
@@ -262,7 +263,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput6(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-indigo-500 text-center"
               maxLength={1}
             />
             <input
@@ -271,7 +272,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput7(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-purple-700 text-center"
               maxLength={1}
             />
             <input
@@ -280,7 +281,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput8(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-purple-700  text-center"
               maxLength={1}
             />
             <input
@@ -289,7 +290,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput9(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-yellow-400 text-center"
               maxLength={1}
             />
             <input
@@ -298,7 +299,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput10(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-700 text-center"
               maxLength={1}
             />
             <input
@@ -307,7 +308,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput11(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-indigo-500 text-center"
               maxLength={1}
             />
             <input
@@ -316,10 +317,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput12(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-indigo-500 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-indigo-500">
               B                
               </div>
               <input
@@ -328,7 +329,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput13(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-purple-700 text-center"
               maxLength={1}
             />
               <input
@@ -337,7 +338,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput14(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-yellow-400 text-center"
               maxLength={1}
             />
               <input
@@ -346,10 +347,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput15(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-700 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-700">
               H                
               </div>
               <input
@@ -358,7 +359,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput16(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-700 text-center"
               maxLength={1}
             />
               <input
@@ -367,10 +368,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput17(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-indigo-500 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-purple-700">
               B                
               </div>
               <input
@@ -379,10 +380,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput18(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-yellow-400 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-yellow-400">
               N                
               </div>
               <input
@@ -391,7 +392,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput19(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-700 text-center"
               maxLength={1}
             />
             <input
@@ -400,10 +401,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput20(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-700 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-orange-400">
               I                
               </div>
               <input
@@ -412,7 +413,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput21(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-purple-700 text-center"
               maxLength={1}
             />
             <input
@@ -421,7 +422,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput22(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-yellow-400 text-center"
               maxLength={1}
             />
             <input
@@ -430,7 +431,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput23(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-orange-400 text-center"
               maxLength={1}
             />
             <input
@@ -439,7 +440,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput24(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-orange-400 text-center"
               maxLength={1}
             />
             <input
@@ -448,7 +449,7 @@ function Stage2() {
               onChange={(e) => {
                 setInput25(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-orange-400 text-center"
               maxLength={1}
             />
             <input
@@ -457,10 +458,10 @@ function Stage2() {
               onChange={(e) => {
                 setInput26(e.target.value);
               }}
-              className="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500 text-center"
+              className="p-2 lg:p-4 rounded-lg shadow-lg bg-orange-400 text-center"
               maxLength={1}
             />
-            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-fuchsia-500">
+            <div class="p-2 lg:p-4 rounded-lg shadow-lg bg-orange-400">
               N                
               </div>
             </div>

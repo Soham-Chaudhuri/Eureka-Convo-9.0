@@ -70,10 +70,10 @@ function Guidelines() {
           <li className="mb-4">
             Most of this round will be of hunting the clues online designed by
             the organizing team, so contestants are required to carry at least
-            one laptop, charger and as well mobile phones per team.
+            one laptop, charger, headphones or earphones and as well mobile phones per team.
           </li>
           <li className="mb-4">
-          Each team will be allowed to use 3 hints(maximum 1 hint per stage) without any penalty, which will be provided by the Hintmaster.
+          Each team will be allowed to use 2 hints(maximum 1 hint per stage) without any penalty, which will be provided by the Hintmaster.
           </li>
           <li className="mb-4">
           Hintmaster will be present in one of the classrooms in 2nd floor. Anyone who wants a hint will have to mention their team name and a secret code(email address of the participant asking for hint) to get it.

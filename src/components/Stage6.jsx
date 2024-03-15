@@ -44,7 +44,7 @@ function Stage6() {
       {team_data && team_data.stage6 && (
         <div className="flex flex-col gap-4 my-4 max-h-max">
           <h1 className="my-6 text-4xl text-center font-extrabold leading-none tracking-widest text-gray-400 md:text-5xl lg:text-[5rem] dark:text-white anton-regular ">
-            STAGE 5:
+            STAGE 6:
           </h1>
           <div className="w-[80vw] lg:w-[90vw] mx-auto mt-10">
             <h4 className="mb-1 text-lg lg:text-4xl leading-none tracking-tight font-semibold dark:text-white poppins-regular text-left">
@@ -59,16 +59,16 @@ function Stage6() {
                 in that event. The online task was to decode a cipher. The
                 cipher was a difficult one Rajat alone couldn't do it, so he
                 sought help from his friend who in turn sought help from their
-                respective friends. Rajat's friend, 'Roy DeSuza' , aspired to be
+                respective friends. Rajat's friend, Roy DeSuza , aspired to be
                 a coder but was a little forgetful, so he took notes of every
                 important thing he needed to remember. His laptop was an old
                 hand-me-down which he got from his father, it crashed
                 frequently, so he saved everything online. Roy had told Rajat
                 where he saved the code, but Rajat forgot the name of the
                 service, although he remembers some distinct features of the
-                service such as it being 'a web-based platform for collaborative
+                service such as it being a web-based platform for collaborative
                 coding, version control, and project management by Microsoft in
-                2018'. Now that Rajat is a secret member of the organizing team,
+                2018. Now that Rajat is a secret member of the organizing team,
                 he wants to test if you are capable enough to find the code.
               </h3>
             </h4>

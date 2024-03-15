@@ -78,6 +78,11 @@ function Stage3() {
           <div className="mx-auto">
             <img src={pic12} alt="" className="object-contain scale-75" />
           </div>
+          <div className="w-[80vw] lg:w-[90vw] mx-auto">
+          <h3 className="mt-4 text-base lg:text-xl leading-none tracking-tight font-normal dark:text-white poppins-regular text-center">
+              Find the place and go for the next clues
+            </h3>
+          </div>
           <div className="flex items-center lg:w-full max-w-md mb-3 seva-fields formkit-fields mt-5 mx-auto">
             <div className="relative lg:w-full mr-3 formkit-field">
               <input
@@ -136,7 +141,7 @@ function Stage3() {
               <h2 className="mb-4">
                 You said to your friend, " 7 6 5 4 3 2 1 "
               </h2>
-              <a className="mb-4 italic" href="https://drive.google.com/file/d/1j3mMuuX-5XmrWIj6D8J5mDSFJvfsGRTu/view?usp=sharing" target="_blank">
+              <a className="mb-4 italic hover:text-teal-400" href="https://drive.google.com/file/d/1j3mMuuX-5XmrWIj6D8J5mDSFJvfsGRTu/view?usp=sharing" target="_blank">
                 {/* https://drive.google.com/file/d/1j3mMuuX-5XmrWIj6D8J5mDSFJvfsGRTu/view?usp=sharing */}
                 Drive
               </a>

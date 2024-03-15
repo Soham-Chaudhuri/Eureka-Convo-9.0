@@ -65,7 +65,7 @@ function Stage4() {
               <span className=" text-gray-500 dark:text-gray-400  poppins-regular">
                 Q1.
               </span>{" "}
-              Connect the Links ....
+              {/* Connect the Links .... */}
             </h4>
           </div>
           <div className="flex justify-center items-center mx-auto w-[80vw] lg:w-[90vw]">

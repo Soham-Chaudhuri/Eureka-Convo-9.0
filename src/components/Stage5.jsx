@@ -17,7 +17,7 @@ function Stage5() {
   const params = useParams();
   const navigate = useNavigate();
   const hgh =
-    "the more we come out and do good to others, the more our hearts will be purified, and god will be in them.";
+    "swami vivekananda";
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({
