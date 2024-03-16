@@ -58,7 +58,7 @@ function Guidelines() {
           </li>
           <li className="mb-4">
             The team that completes the final stage first becomes winner and the
-            teams finishing 2nd and 3rd will be runner-up.
+            teams finishing 1st and 2nd will be runner-up.
           </li>
           <li className="mb-4">
           Time limit is till 4 pm. If no team is able to complete the final stage by then, then the team that cleared the highest level in minimum time will be declared winner.
@@ -73,7 +73,7 @@ function Guidelines() {
             one laptop, charger, headphones or earphones and as well mobile phones per team.
           </li>
           <li className="mb-4">
-          Each team will be allowed to use 2 hints(maximum 1 hint per stage) without any penalty, which will be provided by the Hintmaster.
+          Each team will be allowed to use 2 hints(maximum 1 hint per stage) without any penalty, which will be provided by the Hintmaster but no hint will be provided for the stage 6.
           </li>
           <li className="mb-4">
           Hintmaster will be present in one of the classrooms in 2nd floor. Anyone who wants a hint will have to mention their team name and a secret code(email address of the participant asking for hint) to get it.

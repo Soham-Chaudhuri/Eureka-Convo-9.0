@@ -67,8 +67,7 @@ function Stage6() {
                 where he saved the code, but Rajat forgot the name of the
                 service, although he remembers some distinct features of the
                 service such as it being a web-based platform for collaborative
-                coding, version control, and project management by Microsoft in
-                2018. Now that Rajat is a secret member of the organizing team,
+                coding, version control, and project management by Microsoft. Now that Rajat is a secret member of the organizing team,
                 he wants to test if you are capable enough to find the code.
               </h3>
             </h4>

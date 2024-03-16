@@ -34,9 +34,9 @@ function Stage3() {
   // console.log(team_data);
   const checkAnswer = () => {
     if (!team_data.stage4) {
-      var answer32 = answer3_2.toLowerCase();
+      // var answer32 = answer3_2.toLowerCase();
       if (
-        answer32.includes("champion") &&
+        answer3_2.toLowerCase() === ("the champion") &&
         answer3_3.toLowerCase() === "charlie chaplin" && 
         answer3_1.toLowerCase() === "he is looking like a smug philosopher"
       ) {
@@ -141,7 +141,7 @@ function Stage3() {
               <h2 className="mb-4">
                 You said to your friend, " 7 6 5 4 3 2 1 "
               </h2>
-              <a className="mb-4 italic hover:text-teal-400" href="https://drive.google.com/file/d/1j3mMuuX-5XmrWIj6D8J5mDSFJvfsGRTu/view?usp=sharing" target="_blank">
+              <a className="mb-4 italic text-teal-400" href="https://drive.google.com/file/d/1j3mMuuX-5XmrWIj6D8J5mDSFJvfsGRTu/view?usp=sharing" target="_blank">
                 {/* https://drive.google.com/file/d/1j3mMuuX-5XmrWIj6D8J5mDSFJvfsGRTu/view?usp=sharing */}
                 Drive
               </a>

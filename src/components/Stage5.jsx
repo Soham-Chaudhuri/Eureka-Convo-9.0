@@ -34,7 +34,7 @@ function Stage5() {
     });
   }, []);
   const checkAnswer = () => {
-    if (!team_data.stage5) {
+    if (!team_data.stage6) {
       if (
         answer5_1.toLowerCase() === "password" &&
         answer5_2.toLowerCase() === "error" &&
